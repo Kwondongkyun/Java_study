@@ -1,0 +1,93 @@
+< while >
+
+// 무한루프
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	public static void main(String[] args) {
+		while(true) {
+			System.out.println("Coding Everybody");
+		}
+	}
+}
+
+
+// i값 변화(0~9)
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	public static void main(String[] args) {
+		int i=0;
+		while(i<10) {
+			System.out.println("Coding Everybody"+i);
+			i++;
+		}
+	}
+}
+
+
+
+< for 문 >
+
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++) {
+			System.out.println("Coding Everybody"+i);
+		}
+	}
+}
+
+
+< 반복문의 제어 >
+
+// break(종료 조건)
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++) {
+			if(i==5)
+				break;
+			System.out.println("Coding Everybody"+i);
+		}
+	}
+}
+
+
+
+// continue
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++) {
+			if(i==5)
+				continue;
+			System.out.println("Coding Everybody"+i);
+		}
+	}
+}
+
+
+
+< 반복문의 중첩 >
+
+// 중첩 반복문(00~99)
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		int i,j;
+		for(i=0;i<10;i++) {
+			for(j=0;j<10;j++) {
+				System.out.println(i+ "" +j);
+			}
+		}
+	}
+}
