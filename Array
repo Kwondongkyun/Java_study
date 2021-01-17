@@ -1,0 +1,83 @@
+< 배열 >
+
+// 배열 생성
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		String[] classGroup= {"James", "Kevin", "Mark", "Ken"};             // String[] : 문자열(String) 데이터의 모임([]), classGroup : 배열 변수 명
+	}
+}
+
+
+
+// 배열의 원소(데이터)에 접근
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		String[] classGroup= {"James", "Kevin", "Mark", "Ken"};
+		System.out.println(classGroup[0]);
+		System.out.println(classGroup[1]);
+		System.out.println(classGroup[2]);
+		System.out.println(classGroup[3]);
+	}
+}
+
+
+
+// 배열의 길이
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		String[] classGroup = new String[4];                    // new String : 문자열을 만드는 방법(문자열 데이터 타입을 만드는 방법), 만들려고 한 것 : 배열 -> []사용
+                                                                   ✓ new x[n] : 원소의 개수가 n개인 x 데이터형의 배열 생성
+		classGroup[0] = "James";
+		System.out.println(classGroup.length);                  // length : 변수에 담긴 배열이 몇 개의 값을 수용할 수 있는지 알려주는 값
+		classGroup[1] = "Kevin";
+		System.out.println(classGroup.length);
+		classGroup[2] = "Mark";
+		System.out.println(classGroup.length);
+		classGroup[3] = "Ken";
+		System.out.println(classGroup.length);
+	}
+}
+
+
+
+// 반복문과 배열
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		String[] members = {"James", "Kevin", "Mark"};
+		for(int i=0;i < members.length;i++) {
+			String member = members[i];
+			System.out.println(member + "확인");
+		}
+	}
+}
+
+
+
+// for-each 문
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+
+	public static void main(String[] args) {
+		String[] members = {"James", "Kevin", "Mark"};
+		for(String e : members) {                                         // 배열 members 변수를 for문으로 가져옴, 콜론(:) 뒤에 e 변수의 데이터 형식으로 String 지정
+                                                                          // 반복문이 동작할 때마다 하나씩 꺼내서 e 변수에 담아주고 e 변수의 값을 사용해 배열의 원소를 하나씩 꺼냄
+			System.out.println(e + "확인");
+		}
+	}
+}
+
+
+
