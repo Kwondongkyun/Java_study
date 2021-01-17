@@ -66,6 +66,8 @@ public class javapcode {
 
 
 // for-each 문
+
+-문자열
 package org.opentutorials.javatutorials.javacode;
 
 public class javapcode {
@@ -79,5 +81,15 @@ public class javapcode {
 	}
 }
 
+-정수
+package org.opentutorials.javatutorials.javacode;
 
+public class javapcode {
 
+	public static void main(String[] args) {
+		int[] num = {1,2,3,4,5};
+		for(int e : num) {
+			System.out.println(e);
+		}
+	}
+}
