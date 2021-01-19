@@ -1,0 +1,125 @@
+< method >
+
+// method 정의
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	
+	public static void numbering() {
+		int i=0;
+		while(i<10) {
+			System.out.
+			println(i);
+			i++;
+		}
+	}
+
+	public static void main(String[] args) {
+		numbering();
+	}
+}
+
+
+
+// method 입력값1
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	
+	public static void numbering(int limit) {
+		int i=0;
+		while(i<limit) {
+			System.out.println(i);
+			i++;
+		}
+	}
+	public static void main(String[] args) {
+		numbering(5);
+	}
+}
+
+
+
+// method 입력값2
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	
+	public static void numbering(int init, int limit) {                 // 2 parameter
+		int i=init;
+		while(i < limit) {
+			System.out.println(i);
+			i++;
+		}
+	}
+	public static void main(String[] args) {
+		numbering(1, 5);                                                // 2 argument
+	}
+}
+
+
+
+// method 출력값 1
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	
+	public static String numbering(int init, int limit) {               // String형 함수
+		int i=init;
+		String output = "";
+		while(i < limit) {
+			output+=i;
+			i++;
+		}
+		
+		return output;                                                  // String형 변수 반환
+	}
+	public static void main(String[] args) {
+		String result = numbering(1, 5);
+		System.out.println(result);
+	}
+}
+
+
+
+// method에서 return문 여러 개 사용
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	public static String num(int i) {
+		if(i==0) {
+			return "zero";
+		} 
+        else if(i==1) {
+			return "one";
+		} 
+        else if(i==2) {
+			return "two";
+		}
+		return "none";
+	}
+	public static void main(String[] args) {
+		System.out.println(num(1));
+	}
+}
+
+
+
+// method에서 문자열 배열 반환
+package org.opentutorials.javatutorials.javacode;
+
+public class javapcode {
+	public static String[] getMembers() {                               // 문자열 배열 반환 함수
+		String[] members = {"James", "Kevin", "John"};
+		return members;
+	}
+	public static void main(String[] args) {                            // main 함수
+		String[] members = getMembers();
+		for(int i=0;i<3;i++) {
+			System.out.println(members[i]);
+		}
+	}
+	
+}
+
+
